@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body class="background">
+    <div class="container">
+        <div class="pagnation">
+            <ul>
+                Step 1 of 3
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="create-account">
+            <form name="theForm">
+                <h1 class="title">Let's set up your account</h1>
+                <p class="sub">Already have an account? 
+                    <span class="additional">Sign in</span>
+                </p>
+                    <div>
+                        <input class="inputText" type="text" autocomplete="name" required>
+                        <label class="floating-name">Your name</label>
+                    </div>
+                    <div>
+                        <input class="email inputEmail" type="email" autocomplete="email" required>
+                        <div class="eyeIcon"></div>
+                        <span class="floating-email">Email Address</span>
+                        <span id="message"></span>
+                    </div>
+                    <select>
+                        <option>I would describe my user type as</option>
+                        <option>Developer</option>
+                        <option>Angel</option>
+                        <option>Evil</option>
+                    </select>
+                    <div>
+                        <input class="password inputPwd" type="password" required>
+                        <span class="floating-pwd">Password</span>
+                        <span class="notation" id="pwdHint">Minimum 8 characters</span>
+                    </div>
+                    <button type="submit" id="submit">Next</button>
+                    <p class="description">By clicking the "Next" button, you agree to creating a free account, and to 
+                        <a class="additional" href="#">Terms of Services</a> and 
+                        <a class="additional" href="#">Privacy Policy</a>.
+                    </p>
+            </form>
+        </div>
+        <div class="heading">
+            <h1 class="heading-title">Dummy Heading</h1>
+            <p class="heading-content">Lorem ipsum dolor sit amet, consectetur adiipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</body>
+</html>

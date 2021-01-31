@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  color: #9ca4ab;
+  font-family: 'Open Sans', sans-serif; }
+
+.background {
+  display: block;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center top;
+  background-color: #ffffff;
+  background-image: url("https://s3.invisionapp-cdn.com/storage.invisionapp.com/backgrounds/269251.jpg?x-amz-meta-iv=1&response-cache-control=max-age%3D2419200&x-amz-meta-ck=c8973aa2a9a8f8f185cc57604a15be1e&AWSAccessKeyId=AKIAJFUMDU3L6GTLUDYA&Expires=1614556800&Signature=6vTVlZy9Krk5TIGzUtpMsl%2FEHKI%3D");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  z-index: 0;
+  overflow: hidden; }
+
+.container {
+  display: flex;
+  height: 100%;
+  min-width: 800px;
+  margin: 0 auto;
+  z-index: 999; }
+
+.create-account {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 0;
+  width: 100%;
+  min-width: 855px; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 50px auto; }
+
+.title {
+  color: #333333;
+  font-weight: 700;
+  font-size: 180%; }
+
+.sub {
+  color: #333333;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 85%; }
+
+.additional {
+  color: #3870f1;
+  text-decoration: none;
+  font-weight: 600; }
+  .additional:first-child {
+    padding-left: 10px; }
+
+input, select, button {
+  color: #aaaaaa;
+  height: 40px;
+  background-color: #f9f9f9;
+  border: 1px solid #ededed;
+  font-size: 70%;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 5px 10px; }
+  input::placeholder, select::placeholder, button::placeholder {
+    color: #aaaaaa; }
+
+#error {
+  border: 1px solid #ff0000; }
+
+.error {
+  color: #ffffff;
+  background-color: #ff0000; }
+
+#message {
+  display: block;
+  position: absolute;
+  color: #ff0000;
+  font-size: 80%;
+  margin-top: -20px;
+  margin-bottom: 10px; }
+
+select {
+  font-size: 16px;
+  border: 0;
+  border: 1px solid #ededed;
+  height: 50px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+  background-size: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-position-x: 428.5px; }
+
+.eyeIcon {
+  display: none;
+  position: absolute;
+  background: url(https://banner2.cleanpng.com/20180714/eeu/kisspng-eye-computer-icons-clip-art-eyeball-icon-5b49e1774d4d37.1427658315315685033166.jpg) no-repeat right;
+  background-color: #f9f9f9;
+  background-position: center center;
+  background-size: 30px;
+  right: 58.5%;
+  top: 37%;
+  width: 18px;
+  height: 18px; }
+
+input[type="password"] {
+  background: url(https://banner2.cleanpng.com/20180714/eeu/kisspng-eye-computer-icons-clip-art-eyeball-icon-5b49e1774d4d37.1427658315315685033166.jpg) no-repeat right;
+  background-color: #f9f9f9;
+  background-position-x: 475px;
+  background-position: right center;
+  background-size: 30px;
+  margin-bottom: 0; }
+
+input:focus ~ .floating-name,
+input:not(:focus):valid ~ .floating-name {
+  background-color: #f9f9f9;
+  font-size: 11px;
+  top: 25.5%;
+  bottom: 10px;
+  left: 14%;
+  opacity: 1;
+  height: 10px; }
+
+input:focus ~ .floating-email,
+input:not(:focus):valid ~ .floating-email {
+  background-color: #f9f9f9;
+  font-size: 11px;
+  top: 34.5%;
+  bottom: 10px;
+  left: 14%;
+  opacity: 1;
+  height: 10px; }
+
+input:focus ~ .floating-pwd,
+input:not(:focus):valid ~ .floating-pwd {
+  background-color: #f9f9f9;
+  font-size: 11px;
+  top: 53.5%;
+  bottom: 10px;
+  left: 14%;
+  opacity: 1;
+  height: 10px; }
+
+.inputText, .inputEmail, .inputPwd {
+  color: #000000;
+  font-size: 14px;
+  width: 428px;
+  height: 35px; }
+
+.floating-name {
+  position: absolute;
+  pointer-events: none;
+  left: 14%;
+  top: 28%;
+  transition: 0.2s ease all; }
+
+.floating-email {
+  position: absolute;
+  pointer-events: none;
+  left: 14%;
+  top: 37%;
+  transition: 0.2s ease all; }
+
+.floating-pwd {
+  position: absolute;
+  pointer-events: none;
+  left: 14%;
+  top: 54.5%;
+  transition: 0.2s ease all; }
+
+.notation {
+  font-size: 10px;
+  margin: 5px 0 20px; }
+
+button {
+  background-color: #ededed;
+  font-weight: 600;
+  margin-top: 16px; }
+
+.description {
+  color: #333333;
+  font-size: 80%;
+  line-height: 2;
+  margin-bottom: 100px; }
+  .description .additional {
+    padding-left: 0; }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  min-width: 700px;
+  background-color: #3870f1;
+  margin: 0 auto; }
+  .heading-title {
+    color: #ffffff;
+    font-size: 140%;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 0;
+    margin: 30% auto 20px; }
+  .heading-content {
+    color: #ffffff;
+    font-size: 90%;
+    font-weight: 300;
+    line-height: 2;
+    width: 280px;
+    margin: 0 auto; }
+
+.pagnation {
+  position: absolute;
+  left: 41%;
+  top: 2%; }
+  .pagnation ul {
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+    font-weight: 600;
+    color: #333333;
+    list-style-type: none;
+    text-decoration: none; }
+  .pagnation li {
+    background-color: #333333;
+    border-radius: 50%;
+    margin: 5.9px 6px 0 5px;
+    width: 4px;
+    height: 4px; }
+    .pagnation li:first-child {
+      margin-left: 15px; }
+    .pagnation li:nth-child(2), .pagnation li:nth-last-child(1) {
+      background-color: #aaaaaa; }
+
+@media (min-width: 767px) {
+  form {
+    margin: 40px auto; }
+
+  .pagnation {
+    left: 43%; } }
+@media (min-width: 1440px) {
+  .container {
+    min-width: 1700px;
+    margin: 0 calc((100vw - 1700px)/2); }
+
+  .heading {
+    min-width: 630px; }
+
+  form {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .eyeIcon {
+    display: none;
+    position: absolute;
+    background: url(https://banner2.cleanpng.com/20180714/eeu/kisspng-eye-computer-icons-clip-art-eyeball-icon-5b49e1774d4d37.1427658315315685033166.jpg) no-repeat right;
+    background-color: #f9f9f9;
+    background-position: center center;
+    background-size: 30px;
+    right: 56.5%;
+    top: 37.5%;
+    width: 18px;
+    height: 18px; }
+
+  .pagnation {
+    left: 52%; }
+
+  input:focus ~ .floating-name,
+  input:not(:focus):valid ~ .floating-name {
+    top: 26%; }
+
+  input:focus ~ .floating-email,
+  input:not(:focus):valid ~ .floating-email {
+    top: 34.5%; }
+
+  input:focus ~ .floating-pwd,
+  input:not(:focus):valid ~ .floating-pwd {
+    top: 52.4%; }
+
+  .floating-name {
+    top: 28.5%;
+    left: 13.5%; }
+
+  .floating-email {
+    top: 37%;
+    left: 13.5%; }
+
+  .floating-pwd {
+    top: 55%;
+    left: 13.5%; } }
+
+/*# sourceMappingURL=style.css.map */
